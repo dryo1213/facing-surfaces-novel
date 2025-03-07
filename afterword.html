@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あとがき - すべての面がこちらを向いている</title>
+    <meta name="description" content="歪んだ空間と物語のエスキース - あとがき">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #fff;
+            --background-color: #000;
+            --text-color: #000;
+            --accent-color: #333;
+            --text-background: #fff;
+            --spacing: 1.5rem;
+            --transition-speed: 0.5s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "游明朝", "Yu Mincho", "Noto Serif JP", serif;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            line-height: 1.8;
+            font-weight: 300;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            flex: 1;
+        }
+
+        header {
+            padding: var(--spacing) 0;
+            margin-bottom: var(--spacing);
+            text-align: center;
+            position: relative;
+            color: var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            transform: scale(1);
+            transition: transform 1s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.02);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            letter-spacing: 0.1em;
+        }
+
+        .content-box {
+            margin: 2rem 0;
+            max-width: 680px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--text-background);
+            color: var(--text-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-box h2 {
+            font-size: 1.2rem;
+            margin: 2rem 0 1rem;
+            font-weight: 500;
+        }
+
+        .content-box h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .content-box p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            font-size: 1rem;
+            line-height: 2;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem auto;
+            max-width: 680px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+        }
+
+        footer {
+            padding: var(--spacing);
+            text-align: center;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content-box {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                width: 95%;
+                padding: 1rem 0;
+            }
+
+            .content-box {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>あとがき</h1>
+            <p>すべての面がこちらを向いている</p>
+        </header>
+
+        <div class="content-box">
+            <h2>■導入</h2>
+            <p>　本作品は、著者が修士二年生の秋頃に執筆した小説に、加筆修正を加えて発表したものである。著者は修士論文にて研究の方法論として小説を用いた論文を執筆しており、その習作として本作品が制作された。</p>
+            
+            <h2>■本作執筆の動機</h2>
+            <p>　本作品の執筆は画家である中園孔二が絵の魅力について「すべての面がこっちを向いている」と語ったことから始まった。</p>
+            <p>　幻想小説作家の山尾悠子の『ラピスラズリ』や『夢の遠近法』には、現実から遊離した文学的表現の可能性に感化された。</p>
+            <p>　そこで私は、ある建築物をめぐる物語を文学的表現として完結させるのではなく、文学を建築へ輸入すること、またその逆とを往還することによって、建築と物語の両輪を予期できない形で歪ませることができるのではないかと考えた。</p>
+            <p>　これは物語作成の方法論であると同時に、建築設計の方法論でもある。</p>
+            
+            <h2>■マルチメディア的試行</h2>
+            <p>　本作品の制作に当たって、小説の執筆に並行して、建築物の設計に付随するドローイングおよび模型製作を行った。</p>
+            <p>　主人公からの一人称視点から、建築物の道路からの見え方や、内部空間の構成を決定していく。また同時に、小説から決定された抽象的な形式・構成に対して、私は建築家としてそこにディテールを与えていく。それが小説で直接的に描写されることもあれば、描かれないものの間接的に他の要素へと影響を与える場合もある。</p>
+            
+            <h2>■おわりに</h2>
+            <p>　本作品は「歪んだ空間と物語のエスキース」と副題を名付けたように、文学と建築設計を横断する方法論のための素描であり試作である。</p>
+            <p>　最後まで読んでくれた貴方には感謝申し上げたい。</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="novel.html" class="nav-link">← 小説に戻る</a>
+            <a href="index.html" class="nav-link">トップページへ</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 すべての面がこちらを向いている</p>
+    </footer>
+</body>
+</html>
