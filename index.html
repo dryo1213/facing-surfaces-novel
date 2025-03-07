@@ -183,6 +183,21 @@
             animation: fadeIn 1.5s ease-out;
         }
 
+        .image-gallery {
+            margin: 3rem auto;
+            max-width: 680px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.5rem;
@@ -215,9 +230,15 @@
             <p>主人公は迷信を一蹴し、建物を探し出す。普通の住宅街に埋もれたその建築は、一見すると目立たない外観だが、内部に入ると異質な空間が広がっていた。</p>
             
             <p>通常の三次元空間の法則に従わない内部では、遠近感が歪み、壁、床、天井のすべてが主人公を見つめているかのような感覚に襲われる。一般的な透視図法が逆転したかのような空間で、主人公の認識は徐々に変容していく...</p>
-
-            <a href="novel.html" class="read-link">本編を読む</a>
         </div>
+
+        <div class="image-gallery">
+            <img src="https://i.imgur.com/pPyVEeF.jpg" alt="建築モデル外観" class="gallery-image">
+            <img src="https://i.imgur.com/MK7GiKc.jpg" alt="建築モデル断面" class="gallery-image">
+            <img src="https://i.imgur.com/D6DQjOq.jpg" alt="建築モデル内部" class="gallery-image">
+        </div>
+
+        <a href="novel.html" class="read-link">本編を読む</a>
 
         <div class="author-profile">
             <h2>著者紹介</h2>
