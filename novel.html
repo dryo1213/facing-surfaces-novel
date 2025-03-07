@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全ての面がこちらを向いている - 本編</title>
+    <meta name="description" content="ある建築をめぐる奇譚 - 本編">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #fff;
+            --background-color: #000;
+            --text-color: #000;
+            --accent-color: #333;
+            --text-background: #fff;
+            --spacing: 1.5rem;
+            --transition-speed: 0.5s;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "游明朝", "Yu Mincho", "Noto Serif JP", serif;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            line-height: 1.8;
+            font-weight: 300;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            flex: 1;
+        }
+
+        header {
+            padding: var(--spacing) 0;
+            margin-bottom: var(--spacing);
+            text-align: center;
+            position: relative;
+            color: var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            transform: scale(1);
+            transition: transform 1s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.02);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            letter-spacing: 0.1em;
+        }
+
+        .novel-content {
+            margin: 2rem 0;
+            font-size: 1rem;
+            line-height: 2;
+            letter-spacing: 0.05em;
+            max-width: 680px; /* 読みやすい幅に制限 */
+            margin: 2rem auto;   /* 中央揃え */
+            padding: 2rem;  /* パディング追加 */
+            background-color: var(--text-background);
+            color: var(--text-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .novel-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-ideograph;
+        }
+
+        .chapter-break {
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: normal;
+            letter-spacing: 0.5em;
+        }
+
+        .back-to-home {
+            display: block;
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            opacity: 1;
+        }
+
+        footer {
+            padding: var(--spacing);
+            text-align: center;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            color: var(--primary-color);
+        }
+
+        .author-profile {
+            margin: 4rem auto 2rem;
+            padding: 1.5rem;
+            border-top: 1px solid #333;
+            max-width: 680px;
+            color: var(--primary-color);
+        }
+
+        .author-profile h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .author-profile p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+
+        .date {
+            font-size: 0.8rem;
+            margin-top: 2rem;
+            text-align: right;
+            opacity: 0.7;
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .novel-content {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                width: 95%;
+                padding: 1rem 0;
+            }
+
+            .novel-content {
+                font-size: 0.95rem;
+                line-height: 1.9;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>全ての面がこちらを向いている</h1>
+            <p>ある建築をめぐる奇譚</p>
+        </header>
+
+        <a href="index.html" class="back-to-home">← トップページに戻る</a>
+
+        <div class="novel-content">
+            <p>「全ての面がこちらを向いている。」</p>
+
+            <p>　私の師匠である先生は、ある雑誌への寄稿で以上のように述べた。それは簡素でありながら、複雑な事象を捉えるような、心を射抜く一文であった。</p>
+
+            <p>　普段、その雑誌では著名な建築家を特集しているのだが、今月号に至っては過去の名作建築を再度取り上げるという内容で、そこに例の建築と先生の文章が掲載されていた。</p>
+            <p>　惰性で頁をめくっていて、例の建築の頁が目に入ったとき、私は特段強く惹かれることはなかった。むしろ有象無象のありきたりな作品にすら見えた。先生の名を見つけるまでは、私を引き留めるものは一切感じられなかった。</p>
+
+            <p>　あえてそう撮られたのか、雑誌に載っている写真は全てぼやけているか、断片的な風景を切り取っただけかで、全体像が把握できないような構成であった。表層的に切り取れば、とてつもなく平凡に映ると同時に、何か悍ましいものが奥に潜んでいるような感覚があった。</p>
+            <p>　掲載されている図面の幾何学は奇妙な形態をしていた。リビング・ダイニングの部屋は不定形の多角形であって、まるで適当な座標に八つ点を置いて、それら点群をフリーハンドで結んだだけの、計画途中の落書きのような平面幾何であった。その間取りには、常識的な直角が意図的に避けられているようにさえ見えた。</p>
+
+            <p>　先生の寄稿は、一読しただけでは、ほとんどが建築の部材の取り合いや素材について述べているだけの、至極当たり障りのない文章に思えた。しかし、その細部は偏執的な緻密さによって描かれていた。まるで各々細部を詳細に描き切ることに執着し、ついには頁の方が先に尽きてしまったかのようであった。先生には珍しく、ほとんどが支離滅裂とも言えるような文章の構成であり、散文的であった。捉えようによっては、意味ありげな詳細の解説たちは、実際にはただ放心していただけなのかもしれなかった。まさに紙面に配置された写真のように、断片的で、取り留めもない文章であった。</p>
+
+            <p>　思い返せば、その文章には先生の変化の兆候が垣間見えていた。例えば、「くねり曲がった廊下を進むとき、自分自身が進んでいるのではなく、廊下そのものが自分に向かってくるような錯覚に陥る」というくだりは、単なる空間の描写を超えており、先生の錯乱した精神状態を映し出しているようにも読めた。あるいは「この建物の中では、時間の流れが均質ではない。東側の部屋では時が早く、西側では緩やかに進む」という記述は、通常の建築評論からは逸脱した内容だった。</p>
+
+            <p>　そのような断片の中で、取り分け私の中に残ったのは冒頭で述べた一文であった。「全ての面がこちらを向いている」という言葉は、読むたびに私の中に奇妙な共鳴を引き起こし、ときにはそれが夢にまで現れることがあった。</p>
+ 
+            <p>　聞いた話によると、かの先生はここ暫く研究室へと顔を出しておらず、学校へ長期の休養届を提出しているとのことであった。我々生徒の間で、建物の見学日の前日以降、先生の姿を見たものは居なかった。</p>
+
+            <p>　先生を幻想たらしめ、精神分離とまで追い込む例の建築に、私は興味を持った。学生の身である私は好奇心に駆られ、勉学という口実のもとその建物を見に行くことを決意した。</p>
+
+            <p>　その決意を研究室同期に打ち明けたとき、彼は表情を曇らせた。「その建物には噂がある」と彼は言った。「一度中に入ると、何かが変わってしまうんだ。詳しいことは知らないけど、先生だけじゃない。以前訪れた建築学科の先輩が、その後しばらく授業に出なくなったって話もある。その先輩に建物のことについて問いただしても、あやふやな答えしか返ってこなかったらしい。それから、何人かの学生がその建物を実際に見に行こうと、集団で住宅街を徘徊したところ、なんと、一日中探しても建物を発見できなかったという。まあこれも又聞きだから、真偽は確かではないけど、正直、あの建物に関わるのはやめておいた方がいいよ。」</p>
+
+            <p>　私はそんな迷信じみた話を一笑に付した。建築を学んでいる身としては、空間が心理に与える影響は否定できないが、超常現象的な風評に関しては懐疑的であった。しかし、同期からの忠告は、知らず知らずのうちに私の中に大きな不安の根を下ろしていた。それでも、私の好奇心はそれを上回り、翌日、私は一人でその建物へと向かったのだ。</p>
+
+            <p class="chapter-break">＊</p>
+ 
+            <p>　その建物は都内の主要駅から徒歩十分の所に位置しているという。最寄駅から目的地に向かって十分程歩いていた。猥雑な駅周辺の喧騒を抜け、閑散な住宅地へと入り込んでいく。しかし、一向に目的地を発見することができなかった。結論から言って、私は目的の建物の周辺を三十分近く彷徨っていた。なぜか奇抜なはずの建物をすぐに発見することが出来なかった。というのも奇抜な建物というからには、てっきり天守閣のごとく聳え立つ建物があるはずだと思い込んでいたからだ。その実、そこにあったのは何も変哲もない塀だった。いつの間にか私は目的の地に足を踏み入れていたことにさえ気づかなかった。複雑な土地と無数の住宅群の中に埋もれるように息をしていた。</p>
+
+            <p>　また周辺の建物も奇怪な風貌であったことも惑わす要因になった。どの建物も同じようでありながら、その一つが万が一普通の住宅街へと独立して建っていた時、圧倒的に異質な存在感を放つように立っていた。いや、これも気のせいなのかもしれない。だが、その建物は異質な群の中に潜むように埋没していたのだ。</p>
+
+            <p>　地上二階のその建物は住居というより、宗教施設や刑務所といった風貌に近かった。堅固でありながら、監獄といった内側に閉じられた絶望感は感じられず、むしろ家庭的で神秘的な存在感すらも醸し出されていた。</p>
+
+            <p>　建物の外観は道路側から見ると、鉄筋コンクリートの塀の上に無理やり家型を乗せたような構成に見えた。二階部分の外壁は木板張りで経年劣化により彩度が落ちているようで、屋根材には黒色のガルバリウム鋼板が張られていて、建物全体が暗く黒かった。建物を敷地内の正面から見ると、さっきとは打って変わって、建物外形が複雑に変化して見え、捉えどころのない奇妙な形状が現れた。その様相は、垂直に立ち上がる影の集合体のようでもあり、新興住宅街に塗り替えられた民家の残像のようでもあった。</p>
+            <p>　そのため、すぐ隣に建っている豪邸と肩を並べてみると、遺棄された物置小屋のようであったし、奇抜な造形に反して一気に存在感を失ったように感じられた。故にその建物は周囲の陰の中でかろうじて立っているような繊細さすら感じられた。</p>
+ 
+            <p>　建物の前には、一見すると乱雑で手入れの行き届いていない、極彩色の英国風庭園が広がっていた。敷地に足を踏み入れたときには、手前の塀に隠されて見えなかったのだが、奥へ進むと姿が露わになっていっていき、建物と自分との間に実際の距離以上の奥行きが感じられるようであった。</p>
+
+            <p>　足元には濡れたようなぬめりを持つシダ植物やコケの類いが繁茂しており、その上を歩くと靴底がわずかに吸い付くような感触があった。奥には巨大な毬藻のような庭木が植えられていた。それらを縫うように曲がりくねった道には細かい砕石が敷き詰められていて、なるべく音を立てないように注意して進まねばならなかった。しかし、どれほど慎重に歩いても、石は私の足下で不自然なほど大きな音を立て、まるで私の存在を建物に告げ知らせているかのようだった。</p>
+
+            <p>　各地には中世の拷問器具が連想される鋭利な棘の取り付けられた木箱、風情のある日本庭園の石の灯籠、錆び付いて腐蝕した銅版画など、古今東西の異形の置物が散りばめられていた。それらは一見無秩序に配置されているように見えたが、ある角度から見ると、それらが一つの大きな文様を形作っているような気がした。</p>
+
+            <p>　呆然と立ち尽くしたと思いきや、ふらふらと庭を巡る私の姿は夢遊病患者のように見えたことだろう。様々な位置から切り取られる情景は、荒々しくも美しい風景を立ち上げていた。幾重もの不確かな風景の破片が、視点ごとに揺れ動きながら、事後的に関係性を結び合っていた。</p>
+
+            <p>　この庭園には全体を貫く理念や軸というものが存在せず、複数の空気層の折り重なりが滞留することによって場が生み出されていた。その庭園の奥に現れた建物のシルエットは、薄暗い森の中にある廃墟となった洋館を連想させた。</p>
+
+            <p>　建物に近づくにつれて、私は奇妙な既視感に襲われた。かつてここに来たことがあるような、あるいは長い間ここに居たような感覚だった。それが単なる錯覚であることも、頭では理解していた。</p>
+ 
+            <p>　ここまで来たものの、次なる一手は自分には無かった。目的は十分に達成したかのように思われた。疲労を意識してからは尚のこと足が重い。踵を返そうとしたとき、雑誌で見た煌めく断片的な風景と一文が脳裏をよぎった。この建築の本質は内部空間にあるのではないか。</p>
+
+
+            <p>　そして突然、私は自分がなぜここにいるのかを「思い出した」。</p>
+ 
+            <p>　……そうだ私はここにお手洗いを借りに来た。</p>
+            <p>　私は尿意を催して、この周辺を巡っていたのだ。正当な理由があれば不法侵入罪とはなるまい。そう自分に言い聞かせて、家の中へ入る決心をした。</p>
+
+            <p>　しかし、その瞬間、私は自分の思考のずれに気づいた。これは後付けの理由だ。本当は、私はこの建物の中に入りたかったのだ。いや、もっと正確に言えば、この建物が私を中に入れようとしていた
