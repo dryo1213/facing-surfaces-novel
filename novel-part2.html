@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>すべての面がこちらを向いている - ②</title>
+    <meta name="description" content="歪んだ空間と物語のエスキース - 小説">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #fff;
+            --background-color: #000;
+            --text-color: #000;
+            --accent-color: #333;
+            --text-background: #fff;
+            --spacing: 1.5rem;
+            --transition-speed: 0.5s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "游明朝", "Yu Mincho", "Noto Serif JP", serif;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            line-height: 1.8;
+            font-weight: 300;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            flex: 1;
+        }
+
+        header {
+            padding: var(--spacing) 0;
+            margin-bottom: var(--spacing);
+            text-align: center;
+            position: relative;
+            color: var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            transform: scale(1);
+            transition: transform 1s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.02);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            letter-spacing: 0.1em;
+        }
+
+        .novel-content {
+            margin: 2rem 0;
+            font-size: 1rem;
+            line-height: 2;
+            letter-spacing: 0.05em;
+            max-width: 680px; /* 読みやすい幅に制限 */
+            margin: 2rem auto;   /* 中央揃え */
+            padding: 2rem;  /* パディング追加 */
+            background-color: var(--text-background);
+            color: var(--text-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .novel-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-ideograph;
+        }
+
+        .chapter-break {
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: normal;
+            letter-spacing: 0.5em;
+        }
+
+        .part-number {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .afterword-link {
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+        }
+
+        .afterword-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .afterword-link a:hover {
+            opacity: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem auto;
+            max-width: 680px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+        }
+
+        footer {
+            padding: var(--spacing);
+            text-align: center;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .novel-content {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                width: 95%;
+                padding: 1rem 0;
+            }
+
+            .novel-content {
+                font-size: 0.95rem;
+                line-height: 1.9;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>すべての面がこちらを向いている</h1>
+            <p>歪んだ空間と物語のエスキース</p>
+        </header>
+
+        <div class="novel-content">
+            <div class="part-number">②</div>
+ 
+            <p>　その建物は都内の主要駅から徒歩十分の所に位置しているという。最寄駅から目的地に向かって十分程歩いていた。猥雑な駅周辺の喧騒を抜け、閑散な住宅地へと入り込んでいく。しかし、一向に目的地を発見することができなかった。結論から言って、私は目的の建物の周辺を三十分近く彷徨っていた。なぜか奇抜なはずの建物をすぐに発見することが出来なかった。というのも奇抜な建物というからには、てっきり天守閣のごとく聳え立つ建物があるはずだと思い込んでいたからだ。その実、そこにあったのは何も変哲もない塀だった。いつの間にか私は目的の地に足を踏み入れていたことにさえ気づかなかった。複雑な土地と無数の住宅群の中に埋もれるように息をしていた。</p>
+
+            <p>　また周辺の建物も奇怪な風貌であったことも惑わす要因になった。どの建物も同じようでありながら、その一つが万が一普通の住宅街へと独立して建っていた時、圧倒的に異質な存在感を放つように立っていた。いや、これも気のせいなのかもしれない。だが、その建物は異質な群の中に潜むように埋没していたのだ。</p>
+
+            <p>　地上二階のその建物は住居というより、宗教施設や刑務所といった風貌に近かった。
+堅固でありながら、監獄といった内側に閉じられた絶望感は感じられず、むしろ家庭的で神秘的な存在感すらも醸し出されていた。</p>
+
+            <p>　建物の外観は道路側から見ると、鉄筋コンクリートの塀の上に無理やり家型を乗せたような構成に見えた。二階部分の外壁は木板張りで経年劣化により彩度が落ちているようで、屋根材には黒色のガルバリウム鋼板が張られていて、建物全体が暗く黒かった。建物を敷地内の正面から見ると、さっきとは打って変わって、建物外形が複雑に変化して見え、捉えどころのない奇妙な形状が現れた。その様相は、垂直に立ち上がる影の集合体のようでもあり、新興住宅街に塗り替えられた民家の残像のようでもあった。</p>
+            <p>　そのため、すぐ隣に建っている豪邸と肩を並べてみると、遺棄された物置小屋のようであったし、奇抜な造形に反して一気に存在感を失ったように感じられた。故にその建物は周囲の陰の中でかろうじて立っているような繊細さすら感じられた。</p>
+ 
+            <p>　建物の前には、一見すると乱雑で手入れの行き届いていない、極彩色の英国風庭園が広がっていた。敷地に足を踏み入れたときには、手前の塀に隠されて見えなかったのだが、奥へ進むと姿が露わになっていっていき、建物と自分との間に実際の距離以上の奥行きが感じられるようであった。</p>
+
+            <p>　足元には濡れたようなぬめりを持つシダ植物やコケの類いが繁茂しており、その上を歩くと靴底がわずかに吸い付くような感触があった。奥には巨大な毬藻のような庭木が植えられていた。それらを縫うように曲がりくねった道には細かい砕石が敷き詰められていて、なるべく音を立てないように注意して進まねばならなかった。しかし、どれほど慎重に歩いても、石は私の足下で不自然なほど大きな音を立て、まるで私の存在を建物に告げ知らせているかのようだった。</p>
+
+            <p>　各地には中世の拷問器具が連想される鋭利な棘の取り付けられた木箱、風情のある日本庭園の石の灯籠、錆び付いて腐蝕した銅版画など、古今東西の異形の置物が散りばめられていた。それらは一見無秩序に配置されているように見えたが、ある角度から見ると、それらが一つの大きな文様を形作っているような気がした。</p>
+
+            <p>　呆然と立ち尽くしたと思いきや、ふらふらと庭を巡る私の姿は夢遊病患者のように見えたことだろう。様々な位置から切り取られる情景は、荒々しくも美しい風景を立ち上げていた。幾重もの不確かな風景の破片が、視点ごとに揺れ動きながら、事後的に関係性を結び合っていた。</p>
+
+            <p>　この庭園には全体を貫く理念や軸というものが存在せず、複数の空気層の折り重なりが滞留することによって場が生み出されていた。その庭園の奥に現れた建物のシルエットは、薄暗い森の中にある廃墟となった洋館を連想させた。</p>
+
+            <p>　建物に近づくにつれて、私は奇妙な既視感に襲われた。かつてここに来たことがあるような、あるいは長い間ここに居たような感覚だった。それが単なる錯覚であることも、頭では理解していた。</p>
+ 
+            <p>　ここまで来たものの、次なる一手は自分には無かった。目的は十分に達成したかのように思われた。疲労を意識してからは尚のこと足が重い。踵を返そうとしたとき、雑誌で見た煌めく断片的な風景と一文が脳裏をよぎった。この建築の本質は内部空間にあるのではないか。</p>
+
+
+            <p>　そして突然、私は自分がなぜここにいるのかを「思い出した」。</p>
+ 
+            <p>　……そうだ私はここにお手洗いを借りに来た。</p>
+            <p>　私は尿意を催して、この周辺を巡っていたのだ。正当な理由があれば不法侵入罪とはなるまい。そう自分に言い聞かせて、家の中へ入る決心をした。</p>
+
+            <p>　しかし、その瞬間、私は自分の思考のずれに気づいた。これは後付けの理由だ。本当は、私はこの建物の中に入りたかったのだ。いや、もっと正確に言えば、この建物が私を中に入れようとしていた。その思いを振り払おうとしたが、既に私の足は建物に向かって動き始めていた。</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="novel-part1.html" class="nav-link">← 前のページへ</a>
+            <a href="novel-part3.html" class="nav-link">次のページへ →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 すべての面がこちらを向いている</p>
+    </footer>
+</body>
+</html>
