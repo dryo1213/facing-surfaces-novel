@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>すべての面がこちらを向いている - ①</title>
+    <meta name="description" content="歪んだ空間と物語のエスキース - 小説">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #fff;
+            --background-color: #000;
+            --text-color: #000;
+            --accent-color: #333;
+            --text-background: #fff;
+            --spacing: 1.5rem;
+            --transition-speed: 0.5s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "游明朝", "Yu Mincho", "Noto Serif JP", serif;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            line-height: 1.8;
+            font-weight: 300;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            flex: 1;
+        }
+
+        header {
+            padding: var(--spacing) 0;
+            margin-bottom: var(--spacing);
+            text-align: center;
+            position: relative;
+            color: var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            transform: scale(1);
+            transition: transform 1s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.02);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            letter-spacing: 0.1em;
+        }
+
+        .novel-content {
+            margin: 2rem 0;
+            font-size: 1rem;
+            line-height: 2;
+            letter-spacing: 0.05em;
+            max-width: 680px; /* 読みやすい幅に制限 */
+            margin: 2rem auto;   /* 中央揃え */
+            padding: 2rem;  /* パディング追加 */
+            background-color: var(--text-background);
+            color: var(--text-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .novel-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-ideograph;
+        }
+
+        .chapter-break {
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: normal;
+            letter-spacing: 0.5em;
+        }
+
+        .part-number {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .afterword-link {
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+        }
+
+        .afterword-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .afterword-link a:hover {
+            opacity: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem auto;
+            max-width: 680px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+        }
+
+        footer {
+            padding: var(--spacing);
+            text-align: center;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .novel-content {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                width: 95%;
+                padding: 1rem 0;
+            }
+
+            .novel-content {
+                font-size: 0.95rem;
+                line-height: 1.9;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>すべての面がこちらを向いている</h1>
+            <p>歪んだ空間と物語のエスキース</p>
+        </header>
+
+        <div class="novel-content">
+            <div class="part-number">①</div>
+
+            <p>「すべての面がこちらを向いている」</p>
+
+            <p>　私の師匠である先生は、ある雑誌への寄稿で以上のように述べた。それは簡素でありながら、複雑な事象を捉えるような、心を射抜く一文であった。</p>
+
+            <p>　普段、その雑誌では著名な建築家を特集しているのだが、今月号に至っては過去の名作建築を再度取り上げるという内容で、そこに例の建築と先生の文章が掲載されていた。</p>
+            <p>　惰性で頁をめくっていて、例の建築の頁が目に入ったとき、私は特段強く惹かれることはなかった。むしろ有象無象のありきたりな作品にすら見えた。先生の名を見つけるまでは、私を引き留めるものは一切感じられなかった。</p>
+
+            <p>　あえてそう撮られたのか、雑誌に載っている写真は全てぼやけているか、断片的な風景を切り取っただけかで、全体像が把握できないような構成であった。表層的に切り取れば、とてつもなく平凡に映ると同時に、何か悍ましいものが奥に潜んでいるような感覚があった。</p>
+            <p>　掲載されている図面の幾何学は奇妙な形態をしていた。部屋は不定形の多角形であって、まるで適当な座標に八つ点を置いて、それら点群をフリーハンドで結んだだけの、計画途中の落書きのような平面幾何であった。その間取りには、直角が意図的に避けられているようにさえ見えた。</p>
+
+            <p>　先生の寄稿は、一読しただけでは、ほとんどが建築の部材の取り合いや素材について述べているだけの、至極当たり障りのない文章に思えた。しかし、その細部は偏執的な緻密さによって描かれていた。まるで各々細部を詳細に描き切ることに執着し、ついには頁の方が先に尽きてしまったかのようであった。先生には珍しく、ほとんどが支離滅裂とも言えるような文章の構成であり、散文的であった。捉えようによっては、意味ありげな詳細の解説たちは、実際にはただ放心していただけなのかもしれなかった。まさに紙面に配置された写真のように、断片的で、取り留めもない文章であった。</p>
+
+            <p>　思い返せば、その文章には先生の変化の兆候が垣間見えていた。例えば、「くねり曲がった廊下を進むとき、自分自身が進んでいるのではなく、廊下そのものが自分に向かってくるような錯覚に陥る」というくだりは、単なる空間の描写を超えており、先生の錯乱した精神状態を映し出しているようにも読めた。あるいは「この建物の中では、時間の流れが均質ではない。東側の部屋では時が早く、西側では緩やかに進む」という記述は、通常の建築評論からは逸脱した内容だった。</p>
+
+            <p>　そのような断片の中で、取り分け私の中に残ったのは冒頭で述べた一文であった。「全ての面がこちらを向いている」という言葉は、読むたびに私の中に奇妙な共鳴を引き起こし、ときにはそれが夢にまで現れることがあった。</p>
+ 
+            <p>　聞いた話によると、かの先生はここ暫く研究室へと顔を出しておらず、学校へ長期の休養届を提出しているとのことであった。我々生徒の間で、建物の見学日の前日以降、先生の姿を見たものは居なかった。</p>
+
+            <p>　先生を幻想たらしめ、精神分離とまで追い込む例の建築に、私は興味を持った。学生の身である私は好奇心に駆られ、勉学という口実のもとその建物を見に行くことを決意した。</p>
+
+            <p>　その決意を研究室同期に打ち明けたとき、彼は表情を曇らせた。「その建物には噂がある」と彼は言った。「一度中に入ると、何かが変わってしまうんだ。詳しいことは知らないけど、先生だけじゃない。以前訪れた建築学科の先輩が、その後しばらく授業に出なくなったって話もある。その先輩に建物のことについて問いただしても、あやふやな答えしか返ってこなかったらしい。それから、何人かの学生がその建物を実際に見に行こうと、集団で住宅街を徘徊したところ、なんと、一日中探しても建物を発見できなかったという。まあこれも又聞きだから、真偽は確かではないけど、正直、あの建物に関わるのはやめておいた方がいいよ。」</p>
+
+            <p>　私はそんな迷信じみた話を一笑に付した。建築を学んでいる身としては、空間が心理に与える影響は否定できないが、超常現象的な風評に関しては懐疑的であった。しかし、同期からの忠告は、知らず知らずのうちに私の中に大きな不安の根を下ろしていた。それでも、私の好奇心はそれを上回り、翌日、私は一人でその建物へと向かったのだ。</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">トップページへ</a>
+            <a href="novel-part2.html" class="nav-link">次のページへ →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 すべての面がこちらを向いている</p>
+    </footer>
+</body>
+</html>
