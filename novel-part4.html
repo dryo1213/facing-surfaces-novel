@@ -87,13 +87,22 @@
             background-color: var(--text-background);
             color: var(--text-color);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            position: relative; /* あらすじ配置用 */
         }
 
         .novel-content p {
             margin-bottom: 1.5rem;
             text-align: justify;
             text-justify: inter-ideograph;
+        }
+        
+        .model-image {
+            margin: 3rem 0 1rem;
+            text-align: center;
+        }
+        
+        .model-image img {
+            max-width: 100%;
+            height: auto;
         }
 
         .chapter-break {
@@ -103,21 +112,9 @@
             letter-spacing: 0.5em;
         }
 
-        .summary {
-            position: absolute;
-            right: 2rem;
-            bottom: 2rem;
-            font-size: 0.85rem;
-            font-style: italic;
-            opacity: 0.8;
-            max-width: 65%;
-            text-align: right;
-        }
-
         .nav-links {
             display: flex;
             justify-content: space-between;
-            position: relative;
             margin: 3rem auto;
             max-width: 680px;
         }
@@ -133,20 +130,6 @@
         }
 
         .nav-link:hover {
-            opacity: 1;
-        }
-
-        .afterword-link {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: opacity 0.3s ease;
-            opacity: 0.8;
-        }
-
-        .afterword-link:hover {
             opacity: 1;
         }
 
@@ -183,15 +166,6 @@
                 line-height: 1.9;
                 padding: 2.5rem 1.5rem;
             }
-            
-            .summary {
-                position: static;
-                margin-top: 3rem;
-                padding-top: 1.5rem;
-                border-top: 1px solid #ddd;
-                max-width: 100%;
-                text-align: left;
-            }
         }
     </style>
 </head>
@@ -208,6 +182,9 @@
             <p>　側には、華奢でシンプルなデザインの円テーブルと椅子が置かれていた。</p>
             <p>　部屋を見回すと、壁に掛けられた数枚の額縁が目に入った。近づいてみると、それらは写真でも絵画でもなく、ただの鏡だった。しかし普通の鏡ではなく、微妙に歪んだ鏡。それに映る私の姿は、角度によって伸びたり縮んだり、時には完全に分解されたりした。そして不思議なことに、私が動いていないときでも、鏡の中の私はわずかに動いているように見えた。鏡の前で手を振ると、映像はわずかに遅れて動き、まるで別の時間軸で存在しているかのようだった。</p>
 
+            <div class="model-image">
+                <img src="interior2.jpg" alt="建築模型内部2階" />
+            </div>
 
             <p>　奇妙であった。まるで地球の求積のために用いられるホモロサイン図法のように、非常に入り組んだ複数の手法を用いたために、球体が切れ目のある歪な一つの面に広げられ、そこからは二度と元の図形を再現することが出来ないような。正しさを得るための投影法によって歪められた現実。</p>
 
@@ -237,15 +214,11 @@
             <p>　私の中心の座標が、このものの数十分の間でずれてしまったのだ。</p>
  
             <p>　世界の中心が動いてしまった。その中心から少しずれた場所に身体がひとつある。</p>
-            
-            <div class="summary">
-                歪んだ遠近感、迷宮的廊下、鏡面反射による錯視、すべてが男を錯乱させる。主体と客体が逆転した空間で、男の認識は徐々に変容していく....
-            </div>
         </div>
 
         <div class="nav-links">
             <a href="novel-part3.html" class="nav-link">← 前のページへ</a>
-            <a href="afterword.html" class="afterword-link">あとがきを読む</a>
+            <a href="afterword.html" class="nav-link">あとがきを読む</a>
         </div>
     </div>
 
