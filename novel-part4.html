@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>すべての面がこちらを向いている - ④</title>
+    <meta name="description" content="歪んだ空間と物語のエスキース - 小説">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #fff;
+            --background-color: #000;
+            --text-color: #000;
+            --accent-color: #333;
+            --text-background: #fff;
+            --spacing: 1.5rem;
+            --transition-speed: 0.5s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "游明朝", "Yu Mincho", "Noto Serif JP", serif;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            line-height: 1.8;
+            font-weight: 300;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            flex: 1;
+        }
+
+        header {
+            padding: var(--spacing) 0;
+            margin-bottom: var(--spacing);
+            text-align: center;
+            position: relative;
+            color: var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            transform: scale(1);
+            transition: transform 1s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.02);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            letter-spacing: 0.1em;
+        }
+
+        .novel-content {
+            margin: 2rem 0;
+            font-size: 1rem;
+            line-height: 2;
+            letter-spacing: 0.05em;
+            max-width: 680px; /* 読みやすい幅に制限 */
+            margin: 2rem auto;   /* 中央揃え */
+            padding: 2rem;  /* パディング追加 */
+            background-color: var(--text-background);
+            color: var(--text-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative; /* あらすじ配置用 */
+        }
+
+        .novel-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-ideograph;
+        }
+
+        .chapter-break {
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: normal;
+            letter-spacing: 0.5em;
+        }
+
+        .part-number {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .summary {
+            position: absolute;
+            right: 2rem;
+            bottom: 2rem;
+            font-size: 0.85rem;
+            font-style: italic;
+            opacity: 0.8;
+            max-width: 65%;
+            text-align: right;
+        }
+
+        .afterword-link {
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+        }
+
+        .afterword-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .afterword-link a:hover {
+            opacity: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin: 3rem auto;
+            max-width: 680px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+        }
+
+        .links-container {
+            position: relative;
+        }
+
+        footer {
+            padding: var(--spacing);
+            text-align: center;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .novel-content {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                width: 95%;
+                padding: 1rem 0;
+            }
+
+            .novel-content {
+                font-size: 0.95rem;
+                line-height: 1.9;
+                padding: 1.5rem;
+            }
+            
+            .summary {
+                position: static;
+                margin-top: 3rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid #ddd;
+                max-width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>すべての面がこちらを向いている</h1>
+            <p>歪んだ空間と物語のエスキース</p>
+        </header>
+
+        <div class="novel-content">
+            <div class="part-number">④</div>
+
+            <p>　階段を一段ずつ上り、中腹くらいから頭を出して二階を覗くと、真っ青で光沢のある床面と今にも崩れ落ちそうな複雑形状の天井が私を出迎えた。辺りを見回しても人の気配はなく、つい三十分前には人が居たような微かな生活感が家具に漂っている。恐る恐る二階に足を踏み入れた。</p>
+ 
+            <p>　側には、華奢でシンプルなデザインの円テーブルと椅子が置かれていた。</p>
+            <p>　部屋を見回すと、壁に掛けられた数枚の額縁が目に入った。近づいてみると、それらは写真でも絵画でもなく、ただの鏡だった。しかし普通の鏡ではなく、微妙に歪んだ鏡。それに映る私の姿は、角度によって伸びたり縮んだり、時には完全に分解されたりした。そして不思議なことに、私が動いていないときでも、鏡の中の私はわずかに動いているように見えた。鏡の前で手を振ると、映像はわずかに遅れて動き、まるで別の時間軸で存在しているかのようだった。</p>
+
+
+            <p>　奇妙であった。まるで地球の求積のために用いられるホモロサイン図法のように、非常に入り組んだ複数の手法を用いたために、球体が切れ目のある歪な一つの面に広げられ、そこからは二度と元の図形を再現することが出来ないような。正しさを得るための投影法によって歪められた現実。</p>
+
+
+            <p>　この空間は、通常の三次元空間の法則に従っていないようだった。遠近感が歪み、近くにあるはずのものが遠く、遠くにあるはずのものが近く感じられた。壁と天井の境界線は曖昧で、時に溶け合い、時に鋭角に切り込んでいた。</p>
+
+
+
+            <p>　いうなれば、この建築は、すべての面がこちらを向いていた。</p>
+            <p>　壁、床、天井、家具の細部に至るまで、計算され尽くされていた。どこの位置に立っていても、面がすべてこちら側を向いている。</p>
+            <p>　すべてのモノたちがこちらを覗いているようであった。</p>
+ 
+
+            <p>　私を中心にして全ての面がこちらを向いている。私という点が視点となって全ての面が描かれているとも言えるし、全ての面が乱反射して私という点に収束しているとも言える。絶えずどの位置にいようが、私という消失点に向かって線や面がこちらへ向かってくる。</p>　
+            <p>　一般的に透視図法は、起点である観測者から任意の消失点に向かって収束する線を面に投影することによって、三次元空間を二次元空間に再現する絵画的技法である。しかしここで起きていることは、観測者と消失点の関係性が倒立し、対象物から観測者へ線路が向かう状態が生まれている。この究極的な幾何学的技法によって、ここに住まう住民は絶えずオブジェクトに晒され続け、精神を摩耗していくはずだ。なんとも不快極まりない空間であろうか。</p>
+ 
+            <p>　リビングの背後でギラギラと光を反射する壁の奥に、秘匿めいた屋根裏のような書斎があり、そこには古めかしい書籍が乱雑に積み上げられていた。</p>
+            <p>　その部屋の中央に設置されている引き違いの窓から、外を覗くと、彷徨い歩いているときには見かけなかった子供がひとり、明るいオレンジ色に染められた空の陰りになった街角でじっと足を折り畳んでしゃがんでいた。駅周辺以外ではいかなる人間にも出会わなかったのを思い出し、小さく身体をうずめる少年が気にかかった。向こうに自分の存在が見つからないように低姿勢で様子を伺っていると、少年は一瞬こちらを振り向いたと思いきや、何かを思い出したかのように日向の方へと走り去ってしまった。</p>
+
+ 
+            <p>　もう長いことこの家に居るように思える。ここにはいかなる人間が住むのだろうか。理路整然と物事を思考する論理学者が住んでいるようにも思えるし、衝動的に人生を謳歌する運動家の拠点のようにも思えた。死を渇望している棺ような場でもあり、授かりし生を讚美する聖域ような場でもある。ここでは、あらゆる相反する論理や感情が矛盾を抱えたまま同居しているような、量子力学的な重ね合わせの状態であった。二つかそれ以上の状態が同時的に存在していて、任意の定点における観測によって、変数が決定され建物と観測者の状態が確定する。だからこそ幾ら建物の中を巡っても、幾重もの新しい発見が生まれてくる。</p>
+ 
+            <p>　壁掛け時計が夕方の合図を鳴らしたとき、我に返った。私はここに居るべきではなかった。</p>
+            <p>　家の主人が帰らないうちに慌てて階段を駆け下り、数分前まで永遠とも思えた玄関廊下をものの数秒で抜けて、玄関戸に手を掛けた。</p>
+            <p>　取っ手を握り勢い良く戸を開くと、痛々しい程の日光が目に差し込んできた。数歩前に出て、後ろを振り返ると、そこにあったのは私の中心であった。</p>
+            <p>　私はよろめき後ずさり、砂利道に尻をついた。私の眼はその異形な建物の輪郭をしっかりと見据えたままで、そこから身動きをとることが出来なかった。幾重のもの影の層の中に私は埋もれ、取り残されたここにある私はもぬけの殻に過ぎなかった。</p>
+            <p>　私の中心の座標が、このものの数十分の間でずれてしまったのだ。</p>
+ 
+            <p>　世界の中心が動いてしまった。その中心から少しずれた場所に身体がひとつある。</p>
+            
+            <div class="summary">
+                歪んだ遠近感、迷宮的廊下、鏡面反射による錯視、すべてが男を錯乱させる。主体と客体が逆転した空間で、男の認識は徐々に変容していく....
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="novel-part3.html" class="nav-link">← 前のページへ</a>
+            <div class="links-container">
+                <a href="afterword.html" class="afterword-link">あとがきを読む</a>
+            </div>
+            <a href="index.html" class="nav-link">トップページへ</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 すべての面がこちらを向いている</p>
+    </footer>
+</body>
+</html>
