@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>すべての面がこちらを向いている - ③</title>
+    <meta name="description" content="歪んだ空間と物語のエスキース - 小説">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #fff;
+            --background-color: #000;
+            --text-color: #000;
+            --accent-color: #333;
+            --text-background: #fff;
+            --spacing: 1.5rem;
+            --transition-speed: 0.5s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "游明朝", "Yu Mincho", "Noto Serif JP", serif;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            line-height: 1.8;
+            font-weight: 300;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            flex: 1;
+        }
+
+        header {
+            padding: var(--spacing) 0;
+            margin-bottom: var(--spacing);
+            text-align: center;
+            position: relative;
+            color: var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            transform: scale(1);
+            transition: transform 1s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.02);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            letter-spacing: 0.1em;
+        }
+
+        .novel-content {
+            margin: 2rem 0;
+            font-size: 1rem;
+            line-height: 2;
+            letter-spacing: 0.05em;
+            max-width: 680px; /* 読みやすい幅に制限 */
+            margin: 2rem auto;   /* 中央揃え */
+            padding: 2rem;  /* パディング追加 */
+            background-color: var(--text-background);
+            color: var(--text-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .novel-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-ideograph;
+        }
+
+        .chapter-break {
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: normal;
+            letter-spacing: 0.5em;
+        }
+
+        .part-number {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .afterword-link {
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+        }
+
+        .afterword-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .afterword-link a:hover {
+            opacity: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem auto;
+            max-width: 680px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+        }
+
+        footer {
+            padding: var(--spacing);
+            text-align: center;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .novel-content {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                width: 95%;
+                padding: 1rem 0;
+            }
+
+            .novel-content {
+                font-size: 0.95rem;
+                line-height: 1.9;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>すべての面がこちらを向いている</h1>
+            <p>歪んだ空間と物語のエスキース</p>
+        </header>
+
+        <div class="novel-content">
+            <div class="part-number">③</div>
+
+            <p>　不躾にも塀に取り付けられた、この金属板が玄関戸なのだろうか。馴染みの位置には、インターフォンも表札もない。だがぐるぐると三十分もこの周辺を巡っていて分かったことの一つとして、ここ以外のこの建物の入り口は存在しないということだ。再度、私は意を決して、真鍮製の取っ手に手を掛け、「すみません」と声を出しながら戸を開こうとした。しかし喉の裏が張り付いて思ったように声が出なかった。自分の枯れた声に共鳴するようにして、戸はギシギシと乾いた音を立てた。</p>
+
+
+            <p>　建物の中は非常に暗くて、先が見通せなかった。建物の中は外の空気よりは幾分暖かいが、湿気がこもった黴臭さで、鼻がよじれる。薄暗い玄関の先はすぐ鉄筋コンクリートの曲面の壁が立ち現れており、建物の周りを帯びていた塀を想起させた。塀のような曲面の壁を添いながら廊下を進むと、また奥には同じ曲面の壁が立ち現れて、見知らぬ街の立て続けに袋小路に出会うような感覚になり、私の侵入を建物がひたすらに拒んでいるのではないかと思い浮かべた。徐々に不安が駆り立てられていった。本当にここの場所で合っているのだろうか。そもそもこんな形で不法侵入をして良いのだろうか、と良心の呵責に苛まれてきた。だが、ここまで来て引き返す訳にはいかなかった。</p>
+
+            <p>　暗闇の中、手探りで進んでいくうちに、私は壁の質感に気づいた。表面はザラザラしており、時折湿っている部分もあった。指先で触れると、壁が微かに脈打っているような錯覚に襲われた。ただの振動か、私の鼓動が指先に伝わっているだけなのだろうか。しかし、その感覚は次第に強くなり、やがて壁全体が生き物のように呼吸しているように思えてきた。</p>
+
+            <p>　どれほど歩いただろうか。直線なら数メートルのはずの玄関廊下は、いつまでも続いているようだった。時折、足元から微かな水音が聞こえ、振り返れば、自分の足跡が薄暗い床に湿った影を残しているのが見えた。だが、その足跡は次第に消えていき、私が通ってきた道の記憶すら失われていくようだった。</p>
+ 
+            <p>　永遠にも思えた長さの玄関の終点には、長方形の光の帯が立ち現れていて、その光景には皆既日蝕のような神々しさが感じられた。近づくと、そこには鈍色の重たい金属製の戸があり、戸をゆっくりと開くと、背筋から眼球の神経にかけてぐりんと電気が走った。</p>
+
+            <p>　目が眩むような赤色の床、不均一に壁沿いに配置された柱、それから今にも崩れ落ちてきそうな天井、それから。大量の情報が一気に脳へと流れ込んできて、一瞥しただけではその全体を把握できなかった。それが暗い玄関を抜けた際の、明順応のための単なる生理反応であると理解したときには、幾分か冷静さを取り戻していた。</p>
+
+            <p>　一階には、左手にはトイレがあり、その奥にアンティーク調のベッドがどっしりと置かれている。そして入口正面には鰻の如く捻り上げられた二階へと続く階段が据えられている。外部と通じる窓が全てシャッターによって仕切られていたが、二階の床と柱の間には光が回り込んでくるくらいには大きな隙間があって、そこから反射した光が上から降り注いでくるために暗さを感じなかった。二階には人の気配が感じられない。私はさらに進むことを決め、階段に足をかけた。</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="novel-part2.html" class="nav-link">← 前のページへ</a>
+            <a href="novel-part4.html" class="nav-link">次のページへ →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 すべての面がこちらを向いている</p>
+    </footer>
+</body>
+</html>
